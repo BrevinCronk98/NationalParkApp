@@ -4,7 +4,7 @@ import Parks from './Parks';
 function App() {
 	return (
 		<React.Fragment>
-			<Headlines />
+			<Parks />
 		</React.Fragment>
 	);
 }

@@ -9,7 +9,7 @@ class Parks extends React.Component {
 
 	componentDidMount() {
 		const { dispatch } = this.props;
-		distpatch(makeApiCall());
+		dispatch(makeApiCall());
 	}
 
 	render() {
@@ -23,16 +23,16 @@ class Parks extends React.Component {
 				<React.Fragment>
 					<h1>National Parks</h1>
 					<ul>
-						{parks.map((park, index) => {
+						{parks.map((park, index) => (
 							<li key={index}>
 								<h2>{park.parkName}</h2>
 								<h3>{park.parkLocation}</h3>
 								<p>{park.parkDescription}</p>
 								<p>{park.parkFauna}</p>
 								<p>{park.parkFlora}</p>
-								<p>{parrk.states}</p>
-							</li>;
-						})}
+								<p>{park.states}</p>
+							</li>
+						))}
 					</ul>
 				</React.Fragment>
 			);
